@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.打印5行5列星星
+        var star = '';
+        for (var i = 0; i < 5; i++) {
+            for (var j = 0; j < 5; j++) {
+                star += '☆';
+            }
+            star += '\n';
+        }
+        console.log(star);
+
+        // 2.打印n行n列的星星
+        var star = '';
+        var row = prompt('请输入行数');
+        var col = prompt('请输入列数');
+        for (var i = 0; i < parseInt(row); i++) {
+            for (var j = 0; j < parseInt(col); j++) {
+                star += '☆';
+            }
+            star += '\n';
+        }
+            console.log(star);
+            
+        // 3.打印倒三角形
+        var star = '';
+        var row = prompt('请输入行数');
+        var col = prompt('请输入列数');
+        for (var i = 0; i < row; i++) {
+            for (var j = i; j < col; j++) {
+                star += '☆';
+            }
+            star += '\n';
+        }
+        console.log(star);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
