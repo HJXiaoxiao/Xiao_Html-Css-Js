@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 使用“数组名.length”可以访问数组元素的数量（数组长度）
+        // 1.请将 [“关羽”,“张飞”,“马超”,“赵云”,“黄忠”,“刘备”,“姜维”]; 数组里的元素依次打印到控制台
+        var arr1 = ["关羽", "张飞", "马超", "赵云", "黄忠", "刘备", "姜维"];
+        for (var i = 0; i < arr1.length; i++) {
+            console.log(arr1[i]);
+        }
+
+        // 2.求数组[2, 6, 1, 7, 4]里面所有元素的和以及平均值
+        var arr2 = [2, 6, 1, 7, 4], result = 0, avg = 0;
+        for (var i = 0; i < arr2.length; i++) {
+            result += arr2[i];
+        }
+        avg = result / arr2.length;
+        console.log('和为' + result + '，' + '平均值为：' + avg);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
