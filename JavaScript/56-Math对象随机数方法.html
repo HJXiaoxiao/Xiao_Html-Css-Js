@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // console.log(Math.random());
+        // 得到两个数之间的随机整数，并且包含这两个整数
+        // function getNumber(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1)) + min;
+        // }
+        // console.log(getNumber(1,10));
+
+        // 猜数字游戏
+        var result = getNumber(1, 10);
+        console.log(result);
+        function getNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        while(true) {
+            var num = prompt('请输入数字');
+            if (num == result) {
+                alert('恭喜猜对了');
+                break;
+            }
+            else if (num > result) {
+                alert('数字大了');
+                continue;
+            }
+            else if (num < result) {
+                alert('数字小了');
+                continue;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
