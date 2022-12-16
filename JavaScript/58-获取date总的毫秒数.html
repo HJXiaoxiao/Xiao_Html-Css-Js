@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //  1.通过 valueOf()  getTime() 用于获取对象的原始值
+        var time = new Date();
+        console.log(time.valueOf());
+        console.log(time.getTime());
+
+        // 2.简单的写法
+        var date1 = +new Date();   // +new Date() 返回的就是总的毫秒数
+        console.log(date1);
+
+        // 3. HTML5中提供的方法 获得总的毫秒数 有兼容性问题
+        console.log(Date.now());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
