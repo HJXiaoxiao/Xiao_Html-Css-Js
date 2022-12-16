@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // // 1.如果没有提供参数，那么新创建的 Date 对象表示实例化时刻的日期和时间
+        // var date = new Date();
+        // console.log(date);
+
+        // // 2.参数常用的写法 数字型 2019,10,1  字符串型 '2019-10-1 8:8:8' 时分秒
+        // var date1 = new Date(2019, 10, 1);
+        // console.log(date1);  // 返回的是11月不是10月
+
+        // var data2 = new Date('2019-10-1 8:8:8');
+        // console.log(data2);
+
+        // //格式化日期
+        // var date3 = new Date();
+        // console.log(date3.getFullYear());
+        // console.log(date.getMonth() + 1);  //返回的月份小一个月 记得月份 +1
+
+        var date = new Date();
+        console.log(date.getFullYear()); // 返回当前日期的年 2019
+        console.log(date.getMonth() + 1);  //返回的月份小一个月 记得月份 +1
+        console.log(date.getDate); //返回的是几号
+        console.log(date.getDay());  //周一返回1 周6返回六 周日返回0
+
+
+        // 写一个 2022年 9月 12日 星期一
+        var date = new Date(); 
+        var year =  date.getFullYear();
+        var month = date.getMonth() + 1;
+        var dates = date.getDate();
+        console.log('今天是' + year +'年' + month + '月' + dates +'日' );
+
+        // 封装一个函数返回当前的时分秒 格式 08:08:08
+        function getTimer() {
+            var time = new Date();
+            var h = time.getHours();
+            h = h < 10 ? '0' + h : h;
+            var m = time.getMinutes();
+            m = m < 10 ? '0' + m : m;
+            var s = time.getSeconds();
+            s = s < 10 ? '0' + s : s;
+            return h + ':' + m + ':' + s;
+        }
+        console.log(getTimer());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
